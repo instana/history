@@ -1,3 +1,7 @@
+# Forked
+
+This is a fork of [ReactTraining/history](https://github.com/ReactTraining/history) which addresses the `decodeURI` [issue](https://github.com/ReactTraining/history/issues/505) by removing decoding of `location.pathname`.
+
 # history [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]
 
 [build-badge]: https://img.shields.io/travis/ReactTraining/history/master.svg?style=flat-square
