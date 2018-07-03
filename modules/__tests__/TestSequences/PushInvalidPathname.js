@@ -6,9 +6,14 @@ export default (history, done) => {
     () => {
       expect(() => {
         history.push("/hello%");
-      }).toThrow(
+    }).not.toThrow(
         'Pathname "/hello%" could not be decoded. This is likely caused by an invalid percent-encoding.'
       );
+    },
+    location => {
+      expect(location).toMatchObject({
+        pathname: "/hello%"
+      });
     }
   ];
 
