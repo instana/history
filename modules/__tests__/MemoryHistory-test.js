@@ -63,7 +63,7 @@ describe("a memory history", () => {
     });
 
     describe("push with an invalid path string (bad percent-encoding)", () => {
-      it("throws an error", done => {
+      it("throws no error", done => {
         TestSequences.PushInvalidPathname(history, done);
       });
     });
@@ -87,7 +87,7 @@ describe("a memory history", () => {
     });
 
     describe("replace  with an invalid path string (bad percent-encoding)", () => {
-      it("throws an error", done => {
+      it("throws no error", done => {
         TestSequences.ReplaceInvalidPathname(history, done);
       });
     });

@@ -72,7 +72,7 @@ describeHistory("a browser history", () => {
     });
 
     describe("push with an invalid path string (bad percent-encoding)", () => {
-      it("throws an error", done => {
+      it("throws no error", done => {
         TestSequences.PushInvalidPathname(history, done);
       });
     });
@@ -96,7 +96,7 @@ describeHistory("a browser history", () => {
     });
 
     describe("replace  with an invalid path string (bad percent-encoding)", () => {
-      it("throws an error", done => {
+      it("throws no error", done => {
         TestSequences.ReplaceInvalidPathname(history, done);
       });
     });
